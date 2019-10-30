@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="Place">
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1">
+      <Parameter name="pPos" type="pointRx" xsi:type="element" />
+    </Parameters>
+    <Code><![CDATA[begin
+  movel(appro(pPos,{0,0,-50,0,0,0}),tTool1,mNomSpeed)
+  delay(3)
+  movel(appro(pPos,{0,0,-1,0,0,0}),tTool1,mSlow)
+  delay(3)
+  open(tTool1)
+  movel(appro(pPos,{0,0,-50,0,0,0}),tTool1,mSlow)
+  delay(3)
+  close(tTool1)
+end]]></Code>
+  </Program>
+</Programs>

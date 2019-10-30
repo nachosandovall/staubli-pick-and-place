@@ -1,0 +1,1 @@
+# staubli-pick-and-place

@@ -3,6 +3,8 @@
   <Parameters version="s7.1" stackSize="5000" millimeterUnit="true" />
   <Programs>
     <Program file="Pick.pgx" />
+    <Program file="Place.pgx" />
+    <Program file="RobotMotion.pgx" />
     <Program file="start.pgx" />
     <Program file="stop.pgx" />
   </Programs>

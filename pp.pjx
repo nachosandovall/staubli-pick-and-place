@@ -7,6 +7,7 @@
     <Program file="RobotMotion.pgx" />
     <Program file="start.pgx" />
     <Program file="stop.pgx" />
+    <Program file="User.pgx" />
   </Programs>
   <Database>
     <Data file="pp.dtx" />

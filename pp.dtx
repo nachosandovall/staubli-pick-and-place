@@ -1,22 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Data/2">
   <Datas>
-    <Data name="mNomSpeed" access="private" xsi:type="array" type="mdesc" size="1" />
     <Data name="bBool1" access="private" xsi:type="array" type="bool" size="1">
       <Value key="0" value="true" />
     </Data>
-    <Data name="JHome" access="private" xsi:type="array" type="jointRx" size="1" />
+    <Data name="jHome" access="private" xsi:type="array" type="jointRx" size="1" />
+    <Data name="mNomSpeed" access="private" xsi:type="array" type="mdesc" size="1" />
     <Data name="mSlow" access="private" xsi:type="array" type="mdesc" size="1">
       <Value key="0" accel="25" vel="25" decel="25" tmax="25" rmax="25" />
     </Data>
     <Data name="nRep" access="private" xsi:type="array" type="num" size="1" />
     <Data name="pPointrx1" access="private" xsi:type="array" type="pointRx" size="3">
-      <Value key="0" fatherId="world[0]" />
-      <Value key="1" fatherId="world[0]" />
-      <Value key="2" fatherId="world[0]" />
+      <Value key="0" x="611.54" y="-334.812005" z="260.499354" rx="-4.959689" ry="154.036634" rz="-5.509255" fatherId="world[0]" />
+      <Value key="1" x="739.655424" y="-22.141465" z="103.226279" rx="9.330921" ry="168.093288" rz="-33.667519" fatherId="world[0]" />
+      <Value key="2" x="330.134697" y="799.531714" z="-139.574889" rx="170.585193" ry="-7.909797" rz="71.354806" fatherId="world[0]" />
     </Data>
     <Data name="tTool1" access="private" xsi:type="array" type="tool" size="1">
       <Value key="0" fatherId="flange[0]" ioLink="valve1" />
+    </Data>
+    <Data name="Interfaz" access="private" xsi:type="array" type="screen" size="1" />
+    <Data name="nPact" access="private" xsi:type="array" type="num" size="2" />
+    <Data name="nPdes" access="private" xsi:type="array" type="num" size="2" />
+    <Data name="bBool2" access="private" xsi:type="array" type="bool" size="1">
+      <Value key="0" value="true" />
     </Data>
   </Datas>
 </Database>

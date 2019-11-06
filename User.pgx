@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="User">
+    <Locals>
+      <Local name="nMenu" type="num" xsi:type="array" size="1" />
+      <Local name="pPos" type="pointRx" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  userPage()
+  while ()
+    cls(Interfaz)
+    title(Interfaz,"Pick-and-Place")
+    nMenu = getKey()
+    switch nmenu
+      case 271
+        pPos = pPointrx1[0]
+      break
+      case 272
+        pPos = pPointrx1[1]
+      break
+      case 273
+        pPos = pPointrx1[2]
+      break
+      default
+        pPos=jHome
+      break    
+    endSwitch
+    if bBool2==true
+      call Pick(pPos)
+    else
+      call Place(pPos)
+    bBool2=bBool2!
+  endWhile
+end]]></Code>
+  </Program>
+</Programs>
